@@ -2,6 +2,12 @@
 requires = ["uv_build"]
 build-backend = "uv_build"
 
+[tool.uv]
+exclude-newer = "7 days"
+
+[tool.uv.pip]
+exclude-newer = "7 days"
+
 [project]
 name = "luthien-proxy"
 version = "0.1.0"

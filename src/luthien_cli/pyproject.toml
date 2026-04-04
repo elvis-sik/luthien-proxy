@@ -41,3 +41,9 @@ extend = "../../pyproject.toml"
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
+
+[tool.uv]
+exclude-newer = "7 days"
+
+[tool.uv.pip]
+exclude-newer = "7 days"
